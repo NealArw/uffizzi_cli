@@ -5,6 +5,7 @@ Dir[File.expand_path('support/**/*.rb', __dir__)].sort.each { |f| require f }
 
 require 'uffizzi'
 require 'uffizzi/cli'
+require 'uffizzi/shell'
 require 'test_setup_helper'
 require 'webmock/minitest'
 require 'factory_bot'

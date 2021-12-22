@@ -5,6 +5,9 @@ require_relative '../config/uffizzi'
 
 class Minitest::Test
   def before_setup
+    $stdout = StringIO.new
+    $stdout.truncate(0)
+
     Uffizzi::ConfigFile.delete
   end
 

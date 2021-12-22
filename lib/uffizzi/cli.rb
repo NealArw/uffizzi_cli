@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 require 'thor'
+require 'uffizzi'
 
 module Uffizzi
   class CLI < Thor
     desc 'version', 'show version'
     def version
-      puts Uffizzi::VERSION
+      Uffizzi.ui.say(Uffizzi::VERSION)
     end
 
     desc 'login', 'login'
