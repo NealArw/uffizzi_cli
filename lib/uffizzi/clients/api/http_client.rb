@@ -9,7 +9,7 @@ module Uffizzi
     class << self
       def make_request(request_uri, method, require_cookies, params = {})
         uri = URI(request_uri)
-        Net::HTTP.start(uri.host, uri.port) do |http|
+        response = Net::HTTP.start(uri.host, uri.port) do |http|
           request = build_request(uri, params, method, require_cookies)
 
           http.request(request)
