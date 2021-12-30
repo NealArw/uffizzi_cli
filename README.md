@@ -81,6 +81,15 @@ $ uffizzi config delete OPTION
 
 Deletes specified option.
 
+### apply ###
+
+```
+$ uffizzi apply -f path_to_your_compose_file.yml
+```
+
+Creates deployment based on specified compose file
+
+You need to set project before this command via `uffizzi config set project YOUR_PROJECT_SLUG` command
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/UffizziCloud/uffizzi_cli.
