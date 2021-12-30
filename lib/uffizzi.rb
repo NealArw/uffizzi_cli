@@ -3,7 +3,7 @@
 require 'uffizzi/shell'
 
 module Uffizzi
- class Error < StandardError; end
+  class Error < StandardError; end
 
   class << self
     def ui

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
+
 require 'thor'
 
 module Uffizzi
   module UI
     class Shell
-
       def initialize
         @shell = Thor::Shell::Basic.new
       end
