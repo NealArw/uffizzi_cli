@@ -43,7 +43,7 @@ module Uffizzi
 
     def handle_succeed_response(response)
       unless account_valid?(response[:body][:user][:accounts].first)
-        puts 'No account related to this email'
+        Uffizzi.ui.say('No account related to this email')
         return
       end
       account_id = response[:body][:user][:accounts].first[:id]
